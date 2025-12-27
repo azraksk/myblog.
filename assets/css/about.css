@@ -1,0 +1,283 @@
+/* ABOUT PAGE */
+.about-page {
+  max-width: 1100px;
+  margin: 100px auto;
+  padding: 0 20px;
+}
+
+/* HERO */
+/* HERO */
+.about-hero {
+  text-align: center;
+  margin-bottom: 120px;
+
+  background: linear-gradient(
+    135deg,
+    #f5f3ff,
+    #ffffff
+  );
+
+  padding: 100px 20px;
+  border-radius: 24px;
+}
+
+
+.about-hero h1 {
+  font-family: "Georgia", serif;
+  font-size: 48px;
+  margin-bottom: 16px;
+  letter-spacing: 0.4px;
+}
+
+.about-hero p {
+  font-size: 18px;
+  color: #6b7280;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* CONTENT */
+.about-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 80px;
+  align-items: start;
+  margin-bottom: 140px;
+
+  /* Yeni renk eklemeleri */
+  background: #f5f3ff;       /* çok açık mor arka plan */
+  color: #4c1d95;            /* koyu mor yazı rengi */
+  padding: 30px;              /* iç boşluk ekledik */
+  border-radius: 20px;        /* köşeleri yuvarladık */
+  box-shadow: 0 15px 40px rgba(0,0,0,0.06); /* hafif gölge */
+}
+
+
+.about-text h2 {
+    font-family: "Georgia", serif;
+    font-size: 36px;           /* biraz daha büyük ve dikkat çekici */
+    margin-bottom: 25px;
+    color: #4c1d95;            /* şık koyu mor */
+    line-height: 1.2;          /* başlığı sıkıştırmadan okunaklı */
+    letter-spacing: 0.5px;     /* hafif aralık ekleyerek modern görünüm */
+}
+
+.about-text p {
+    font-family: 'Segoe UI', Tahoma, sans-serif;  /* modern yazı tipi */
+    font-size: 17px;         /* okunaklı boyut */
+    line-height: 1.9;        /* rahat okuma */
+    color: #4b5563;          /* hafif koyu gri, göz yormaz */
+    margin-bottom: 20px;
+    text-align: justify;     /* blok metin görünümü */
+}
+
+.about-text p a {
+    color: #7c3aed;          /* linkler mor tonunda */
+    text-decoration: underline; 
+    transition: color 0.2s ease;
+}
+
+.about-text p a:hover {
+    color: #5b21b6;          /* hover efektiyle belirginleşme */
+}
+
+
+/* QUOTE */
+.about-quote {
+  font-family: "Georgia", serif;
+  font-size: 20px;
+  color: #6b7280;
+  border-left: 4px solid #7c3aed;
+  padding-left: 24px;
+}
+
+.about-quote span {
+  display: block;
+  margin-top: 12px;
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+/* VALUES */
+.about-values {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.value-card {
+  padding: 30px;
+  border-radius: 16px;
+  background: #f9fafb;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 34px rgba(0,0,0,0.08);
+}
+
+.value-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.value-card p {
+  font-size: 14px;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .about-values {
+    grid-template-columns: 1fr;
+  }
+}
+/* WHO ARE WE */
+.who-are-we {
+    max-width: 1100px;
+    margin: 80px auto 0;
+    text-align: center;
+    background: #f5f3ff;           /* çok hafif mor arka plan */
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.06); /* modern gölge efekti */
+}
+
+.who-are-we h2 {
+    font-family: "Georgia", serif;
+    font-size: 36px;               /* biraz daha büyük ve dikkat çekici */
+    margin-bottom: 20px;
+    color: #4c1d95;                /* koyu mor ton */
+    line-height: 1.3;
+    letter-spacing: 0.5px;
+}
+
+.who-are-we p {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-size: 17px;               /* daha okunaklı metin boyutu */
+    line-height: 1.9;
+    color: #374151;                /* koyu gri, göz yormayan */
+    margin-bottom: 16px;
+}
+
+.who-are-we p a {
+    color: #7c3aed;                /* link mor tonu */
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+.who-are-we p a:hover {
+    color: #5b21b6;                /* hover efekti */
+}
+
+/* CONTACT SECTION */
+.about-contact {
+  margin-top: 140px;
+  padding: 80px 60px;
+  background: #f9fafb;
+  border-radius: 24px;
+}
+
+/* TITLE */
+.about-contact h2 {
+  font-family: "Georgia", serif;
+  font-size: 34px;
+  color: #7c3aed; /* MOR SADECE BAŞLIK */
+  margin-bottom: 14px;
+}
+
+.about-contact > p {
+  font-size: 16px;
+  color: #6b7280;
+  max-width: 520px;
+  margin-bottom: 50px;
+}
+
+/* GRID */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+/* INFO */
+.contact-info p {
+  font-size: 15px;
+  color: #374151;
+  margin-bottom: 16px;
+}
+
+.contact-info strong {
+  color: #111827;
+}
+
+/* FORM */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-family: inherit;
+  font-size: 14px;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 120px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.12);
+}
+
+/* BUTTON */
+.contact-form button {
+  align-self: flex-start;
+  padding: 12px 28px;
+  border-radius: 999px;
+  border: none;
+  background: #7c3aed;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(124, 58, 237, 0.25);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .about-contact {
+    padding: 60px 30px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form button {
+    width: 100%;
+    text-align: center;
+  }
+}
+

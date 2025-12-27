@@ -1,0 +1,239 @@
+.admin-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9fafb;
+  padding: 40px 20px;
+}
+
+.post-card {
+  width: 100%;
+  max-width: 640px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+.post-card h1 {
+  font-family: "Georgia", serif;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #6b7280;
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #374151;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #7c3aed;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: #7c3aed;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #6d28d9;
+}
+
+.alert {
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.alert.error {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.alert.success {
+  background: #ecfdf5;
+  color: #065f46;
+}
+/* FORM CARD */
+.form-card {
+  max-width: 700px;
+  margin: 60px auto;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+}
+
+.form-card h2 {
+  font-family: Georgia, serif;
+  font-size: 32px;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 30px;
+}
+
+/* FORM */
+.form-card label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #374151;
+}
+
+.form-card input,
+.form-card textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  font-size: 14px;
+}
+
+.form-card textarea {
+  resize: vertical;
+}
+
+.form-card button {
+  background: #7c3aed;
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.form-card button:hover {
+  background: #6d28d9;
+}
+
+/* MESSAGES */
+.error {
+  background: #fee2e2;
+  color: #991b1b;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.success {
+  background: #ecfdf5;
+  color: #065f46;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+/* ADMIN NAVBAR */
+.admin-navbar {
+  background: #ffffff;
+  border-bottom: 1px solid #ede9fe;
+}
+
+.admin-nav-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding: 22px 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LOGO */
+.admin-logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.admin-logo .dot {
+  color: #7c3aed;
+}
+
+/* LINKS */
+.admin-links {
+  display: flex;
+  gap: 28px;
+}
+
+.admin-links a {
+  position: relative;
+  text-decoration: none;
+  font-size: 14px;
+  color: #4b5563;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+}
+
+/* underline hover */
+.admin-links a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background: #7c3aed;
+  transition: all 0.3s ease;
+}
+
+.admin-links a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.admin-links a:hover {
+  color: #111827;
+}
+
+/* LOGOUT */
+.admin-links .logout {
+  color: #7c3aed;
+  font-weight: 500;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .admin-links {
+    gap: 16px;
+  }
+
+  .admin-links a {
+    font-size: 13px;
+  }
+}

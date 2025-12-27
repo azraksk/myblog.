@@ -1,0 +1,108 @@
+/* ========== GENERAL ========== */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #f9fafb;
+  color: #1f2937;
+}
+
+/* ========== HERO ========== */
+.categories-hero {
+  text-align: center;
+  padding: 120px 20px 90px;
+  background: linear-gradient(135deg, #ede9fe, #ffffff);
+}
+
+.categories-hero h1 {
+  font-size: 52px;
+  font-weight: 800;
+  color: #4c1d95;
+  margin-bottom: 10px;
+}
+
+.categories-hero p {
+  font-size: 18px;
+  color: #6b7280;
+}
+
+/* ========== GRID ========== */
+.categories-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px 120px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 35px;
+}
+
+/* ========== CARD ========== */
+.category-card {
+  background: white;
+  border-radius: 18px;
+  padding: 32px;
+  border: 1px solid #e5e7eb;
+  transition: 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+.category-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
+.category-icon {
+  font-size: 28px;
+}
+
+.category-card h2 {
+  font-size: 22px;
+  color: #4c1d95;
+}
+
+/* Description */
+.category-desc {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 18px;
+}
+
+/* Posts list */
+.category-posts {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.category-posts li {
+  margin-bottom: 10px;
+}
+
+.category-posts a {
+  text-decoration: none;
+  color: #374151;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.category-posts a:hover {
+  color: #7c3aed;
+  padding-left: 4px;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .categories-hero h1 {
+    font-size: 38px;
+  }
+
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+}

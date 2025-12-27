@@ -1,0 +1,125 @@
+/* ===== HEADER / NAVBAR ===== */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 40px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    font-family: Arial, sans-serif;
+}
+
+/* LOGO */
+.site-header .logo a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    position: relative;
+}
+
+/* Mor çizgi / nokta */
+.site-header .logo a::after {
+    content: "";
+    position: absolute;
+    bottom: -4px; /* logonun altına */
+    left: 0;
+    width: 35%;
+    height: 3px;
+    background-color: #7c3aed; /* mor renk */
+    border-radius: 2px;
+}
+
+/* MENÜ ORTA */
+.nav-center {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex: 1;
+}
+
+.nav-center a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.nav-center a:hover {
+    background: #f1dff4;
+}
+
+.nav-center a.active {
+    font-weight: bold;
+    color: #7c3aed;
+}
+
+/* SAĞ PROFİL / LOGIN */
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.nav-right a:hover {
+    background: #f0f0f0;
+}
+
+/* ===== PROFIL DROPDOWN ===== */
+.profile-wrapper {
+    position: relative;
+    cursor: pointer;
+}
+
+.profile-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+.profile-dropdown {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 180px;
+    display: none;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.profile-dropdown a,
+.profile-name {
+    display: block;
+    padding: 12px 15px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #333;
+}
+
+.profile-name {
+    font-weight: 600;
+    background: #f7f7f7;
+}
+
+.profile-dropdown a:hover {
+    background: #f1f1f1;
+}
+
+.logout {
+    color: #e74c3c;
+}
+
+.profile-dropdown.active {
+    display: block;
+}

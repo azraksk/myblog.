@@ -1,0 +1,110 @@
+/* PAGE */
+body {
+  background: linear-gradient(135deg, #f5f3ff, #ffffff);
+}
+
+/* WRAPPER */
+.auth-wrapper {
+  max-width: 380px;
+  margin: 100px auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.08);
+}
+
+/* LOGO */
+.logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo a {
+  font-family: "Georgia", serif;
+  font-size: 28px;
+  text-decoration: none;
+  color: #111827;
+}
+
+.logo span {
+  color: #7c3aed;
+}
+
+/* FORM */
+.auth-form h2 {
+  font-family: "Georgia", serif;
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+/* INPUTS */
+.auth-form input {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  font-size: 14px;
+}
+
+.auth-form input:focus {
+  outline: none;
+  border-color: #7c3aed;
+}
+
+/* BUTTON */
+.auth-form button {
+  width: 100%;
+  padding: 14px;
+  background: #7c3aed;
+  color: white;
+  border: none;
+  border-radius: 14px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.auth-form button:hover {
+  background: #6d28d9;
+  transform: translateY(-2px);
+}
+
+/* SWITCH */
+.switch {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.switch span {
+  color: #7c3aed;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.switch span:hover {
+  text-decoration: underline;
+}
+
+/* MESSAGES */
+.error {
+  color: #dc2626;
+  text-align: center;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.success {
+  color: #16a34a;
+  text-align: center;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+/* HIDDEN */
+.hidden {
+  display: none;
+}
