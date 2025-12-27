@@ -19,7 +19,7 @@ session_start();
 <section class="hero-grid">
 
   <div class="hero-card bg-1 main-hero">
-    <img src="assets/images/.jpg" alt="Hero 1">
+    <img src="assets/images/t.jpg" alt="Hero 1">
     <div class="hero-text">
       <h1>Welcome to<br>MyBlog.</h1>
     </div>
