@@ -127,25 +127,28 @@ if (isset($_POST['contact_submit'])) {
   </section>
 
   <!-- CONTACT -->
-<!-- CONTACT -->
 <section class="about-contact">
-    <h2>Contact Us</h2>
-    <p>Anything you’d like to add or ask? We’d love to hear from you! 😊</p>
+  <div class="contact-wrapper">
+    <!-- Sol taraf: Bilgiler -->
+    <div class="contact-info">
+      <h2>Contact Us</h2>
+      <p>Have a question, feedback or just want to say hello? Feel free to reach out.</p>
+      <span>Email: myblog@email.com</span>
+      <span>Instagram: @myblog</span>
+      <span>Location: Istanbul, Turkiye</span>
+    </div>
 
-    <?php if ($contact_error): ?>
-        <div class="alert error"><?= $contact_error ?></div>
-    <?php endif; ?>
-    <?php if ($contact_success): ?>
-        <div class="alert success"><?= $contact_success ?></div>
-    <?php endif; ?>
-
+    <!-- Sağ taraf: Form -->
     <form class="contact-form" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit" name="contact_submit">Send Message</button>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" name="contact_submit">Send</button>
     </form>
+  </div>
 </section>
+
+
 
 
 

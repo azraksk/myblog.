@@ -216,95 +216,101 @@ body {
 }
 
 /* HERO GRID */
+/* ===================== HERO GRID ===================== */
 .hero-grid {
-  max-width: 1200px;
-  margin: 60px auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  padding: 0 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin: 60px auto;
+  max-width: 1200px;
 }
 
+/* ===================== HERO CARD ===================== */
 .hero-card {
-  height: 280px;
   position: relative;
-  background-size: cover;
-  background-position: center;
+  border-radius: 20px;
   overflow: hidden;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #7e3286;
+  cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-/* hover */
 .hero-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 14px 34px rgba(0,0,0,0.08);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(146, 37, 213, 0.2);
 }
 
-.hero-card::before {
-  content: "";
+/* IMAGE inside hero-card (if img tag used) */
+.hero-card img {
   position: absolute;
   inset: 0;
-  background: rgba(124, 58, 237, 0.08);
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
 }
 
-.hero-card:hover::before {
-  opacity: 1;
+/* ===================== HERO BACKGROUNDS ===================== */
+.hero-card.bg-1 {
+  background: linear-gradient(rgba(124,58,237,0.3), rgba(124,58,237,0.3)), url('assets/images/o.jpg') center/cover no-repeat;
 }
 
-/* images */
-.bg-1 {
-  background-image: url("../images/o3.jpg");
+.hero-card.bg-2 {
+  background: linear-gradient(rgba(236,72,153,0.3), rgba(236,72,153,0.3)), url('assets/images/oo.jpg') center/cover no-repeat;
 }
 
-.bg-2 {
-  background-image: url("../images/f.jpg");
+.hero-card.bg-3 {
+  background: linear-gradient(rgba(124,58,237,0.3), rgba(124,58,237,0.3)), url('assets/images/o3.jpg') center/cover no-repeat;
 }
 
-.bg-3 {
-  background-image: url("../images/oo.jpg");
+/* ===================== HERO TEXT ===================== */
+.hero-card .hero-text {
+    position: relative;          /* içerik kutusu konumlandırması */
+    z-index: 2;                  /* görselin üstünde kalması için */
+    background: rgba(255, 255, 255, 0.6); /* yarı saydam beyaz */
+    padding: 20px 25px;          /* iç boşluk */
+    border-radius: 16px;         /* yuvarlatılmış köşeler */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1); /* hafif gölge */
+    color: #1f2937;              /* yazı rengi koyu gri */
+    font-family: "Georgia", serif;
+    text-align: center;
 }
 
 
-/* text positioning */
-.hero-text {
-  position: absolute;
-  bottom: 28px;
-  left: 28px;
-  color: #111827;
-  text-shadow: 0 4px 14px rgba(0,0,0,0.12);
+.hero-card .hero-text h1,
+.hero-card .hero-text h2,
+.hero-card .hero-text h3 {
+  margin: 0;
   font-family: "Georgia", serif;
-  background: rgba(255, 255, 255, 0.85);
-  padding: 16px 20px;
-  border-radius: 14px;
-  backdrop-filter: blur(6px);
+  color: #111827;
+  text-shadow: 1px 1px 6px rgba(114, 10, 121, 0.3);
 }
 
-/* MAIN HERO (Welcome) */
-.main-hero .hero-text h1 {
-  font-size: 34px;
-  line-height: 1.2;
-  letter-spacing: 0.5px;
-}
 
-/* OTHER CARDS */
-.hero-text h2 {
-  font-size: 24px;
-  line-height: 1.3;
-  font-weight: 500;
-}
-
+/* MAIN HERO overlay (optional gradient effect) */
 .main-hero::after {
   content: "";
   position: absolute;
   inset: 0;
   background: linear-gradient(
     to top,
-    rgba(124, 58, 237, 0.35),
+    rgba(125, 69, 222, 0.2),
     rgba(124, 58, 237, 0.05)
   );
+  pointer-events: none;
 }
+
+/* ===================== HERO TEXT POSITIONING ===================== */
+.hero-text {
+  bottom: 28px;
+  left: 28px;
+  position: absolute;
+}
+
 
 section h2::after {
   content: "";
@@ -407,7 +413,54 @@ section h2::after {
   text-align: center;
 }
 
+.hero-card.bg-3 {
+    background-color: rgba(124, 58, 237, 0.2); /* hafif mor overlay */
+    /* veya */
+    background: linear-gradient(rgba(124,58,237,0.2), rgba(124,58,237,0.2)), url('assets/images/o3.jpg');
+}
 
+
+.hero-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(124, 58, 237, 0.2); /* mor ton */
+}
+.hero-card.bg-3 {
+    background: url('assets/images/o3.jpg') no-repeat center/cover;
+}
+.hero-card.bg-3::before {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+  .hero-card {
+    height: 220px;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .hero-text h2 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-card {
+    height: 180px;
+  }
+
+  .hero-text h1 {
+    font-size: 22px;
+  }
+
+  .hero-text h2 {
+    font-size: 18px;
+  }
+}
 /* TESTIMONIALS */
 .testimonials {
   background: #f9fafb;
@@ -451,4 +504,5 @@ section h2::after {
 .footer strong {
   color: #7c3aed;
 }
+
 

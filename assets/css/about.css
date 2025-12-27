@@ -91,15 +91,9 @@
   padding-left: 24px;
 }
 
-.about-quote span {
-  display: block;
-  margin-top: 12px;
-  font-size: 14px;
-  color: #9ca3af;
-}
-
 /* VALUES */
 .about-values {
+  
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
@@ -108,7 +102,7 @@
 .value-card {
   padding: 30px;
   border-radius: 16px;
-  background: #f9fafb;
+  background: #f5f3ff;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -178,25 +172,33 @@
 
 /* CONTACT SECTION */
 .about-contact {
-  margin-top: 140px;
-  padding: 80px 60px;
-  background: #f9fafb;
-  border-radius: 24px;
+  max-width: 1100px;
+  margin: 100px auto;
+  background: #f5f3ff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.06); /* modern gölge efekti */
+}
+
+.contact-wrapper {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 /* TITLE */
 .about-contact h2 {
   font-family: "Georgia", serif;
-  font-size: 34px;
-  color: #7c3aed; /* MOR SADECE BAŞLIK */
-  margin-bottom: 14px;
+  font-size: 32px;
+  margin-bottom: 12px;
+  color: #7c3aed; /* mor başlık rengi */
 }
-
-.about-contact > p {
+.about-contact p {
   font-size: 16px;
   color: #6b7280;
-  max-width: 520px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 /* GRID */
@@ -208,38 +210,51 @@
 }
 
 /* INFO */
-.contact-info p {
-  font-size: 15px;
+.contact-info {
+  flex: 1 1 300px;
   color: #374151;
-  margin-bottom: 16px;
 }
 
-.contact-info strong {
-  color: #111827;
+.contact-info h2 {
+  font-family: "Georgia", serif;
+  font-size: 32px;
+  margin-bottom: 12px;
+  color: #7c3aed; /* mor başlık */
 }
+
+.contact-info p {
+  font-size: 16px;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+.contact-info span {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
 
 /* FORM */
 .contact-form {
+  flex: 1 1 300px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 15px;
 }
+
 
 .contact-form input,
 .contact-form textarea {
-  font-family: inherit;
-  font-size: 14px;
-  padding: 14px 16px;
+  padding: 12px 15px;
   border-radius: 10px;
-  border: 1px solid #e5e7eb;
-  outline: none;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #d1d5db;
+  font-size: 15px;
+  width: 100%;
+  resize: vertical;
 }
 
-.contact-form textarea {
-  resize: none;
-  height: 120px;
-}
+
 
 .contact-form input:focus,
 .contact-form textarea:focus {
@@ -249,21 +264,23 @@
 
 /* BUTTON */
 .contact-form button {
-  align-self: flex-start;
-  padding: 12px 28px;
+  padding: 12px 25px;
   border-radius: 999px;
   border: none;
   background: #7c3aed;
   color: white;
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: 600;
   cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .contact-form button:hover {
+  background: #6d28d9;
   transform: translateY(-2px);
-  box-shadow: 0 12px 24px rgba(124, 58, 237, 0.25);
 }
+
+
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
@@ -280,4 +297,5 @@
     text-align: center;
   }
 }
+
 

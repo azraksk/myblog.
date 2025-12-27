@@ -23,9 +23,10 @@ $BASE_URL = '/blog-project'; // Proje kök dizin yolu
     <div class="nav-right">
         <?php if (isset($_SESSION["user_id"])): ?>
             <div class="profile-wrapper" id="profileToggle">
-                <img src="<?= $BASE_URL ?>/assets/img/default-avatar.png" class="profile-avatar" alt="Profile">
+                <img src="<?= !empty($_SESSION['user_avatar']) ? $BASE_URL . '/admin/uploads/' . $_SESSION['user_avatar'] : $BASE_URL . '/assets/img/default-avatar.png' ?>" class="profile-avatar" alt="Profile">
                 <div class="profile-dropdown" id="profileMenu">
                     <div class="profile-name"><?= htmlspecialchars($_SESSION["user_name"]) ?></div>
+                    <a href="<?= $BASE_URL ?>/admin/profile.php">Profile</a>
                     <a href="<?= $BASE_URL ?>/admin/dashboard.php">Dashboard</a>
                     <a href="<?= $BASE_URL ?>/auth/logout.php" class="logout">Logout</a>
                 </div>

@@ -9,7 +9,7 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Blog</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+   <link rel="stylesheet" href="assets/css/style.css?v=1.1">
 </head>
 <body>
 
@@ -19,24 +19,28 @@ session_start();
 <section class="hero-grid">
 
   <div class="hero-card bg-1 main-hero">
+    <img src="assets/images/.jpg" alt="Hero 1">
     <div class="hero-text">
       <h1>Welcome to<br>MyBlog.</h1>
     </div>
   </div>
 
   <div class="hero-card bg-2">
+    <img src="assets/images/tt.jpg" alt="Hero 2">
     <div class="hero-text">
       <h2>Keep<br>Writing</h2>
     </div>
   </div>
 
   <div class="hero-card bg-3">
+    <img src="assets/images/ttt.jpg" alt="Hero 3">
     <div class="hero-text">
-      <h2>Keep<br>Blooming</h2>
+      <h3>Keep<br>Blooming</h3>
     </div>
   </div>
 
 </section>
+
 
 <!-- PURPOSE -->
 <section class="purpose">
@@ -51,17 +55,17 @@ session_start();
 <!-- IMAGES -->
 <section class="about-images">
   <div class="about-image">
-    <img src="assets/images/t.jpg" alt="">
+    <img src="assets/images/o.jpg" alt="">
     <p>Writing ideas and thoughts</p>
   </div>
 
   <div class="about-image">
-    <img src="assets/images/tt.jpg" alt="">
+    <img src="assets/images/oo.jpg" alt="">
     <p>A calm space to create</p>
   </div>
 
   <div class="about-image">
-    <img src="assets/images/ttt.jpg" alt="">
+    <img src="assets/images/o3.jpg" alt="">
     <p>Minimal and meaningful design</p>
   </div>
 </section>
