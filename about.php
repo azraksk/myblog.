@@ -1,5 +1,4 @@
 <?php
-include "includes/header.php";
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -46,6 +45,7 @@ if (isset($_POST['contact_submit'])) {
 ?>
 
 
+<?php include_once __DIR__ . "/includes/header.php"; ?>
 
 
 
@@ -56,7 +56,7 @@ if (isset($_POST['contact_submit'])) {
   <title>About | MyBlog</title>
 
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/about.css?v=1.1">
+  <link rel="stylesheet" href="assets/css/about.css?">
   <link rel="stylesheet" href="assets/css/header.css">
 </head>
 <body>

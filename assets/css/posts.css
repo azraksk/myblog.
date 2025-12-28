@@ -1,108 +1,118 @@
-/* ================= BODY ================= */
-body {
-    font-family: 'Segoe UI', Tahoma, sans-serif;
-    background: #f8f7ff;
-    color: #1f2937;
-    margin: 0;
-    padding: 0 20px;
+.posts-wrapper {
+    max-width: 1200px;
+    margin: 60px auto;
 }
 
-/* ================= POST WRAPPER ================= */
-.post-wrapper {
-    max-width: 800px;
-    margin: 50px auto;
-}
-
-/* ================= POST TITLE ================= */
-.post-title {
-    font-family: Georgia, serif;
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #4c1d95; /* hafif mor */
-    line-height: 1.2;
-}
-
-/* ================= POST IMAGE ================= */
-.post-image {
-    width: 100%;
-    max-height: 400px;
-    overflow: hidden;
-    border-radius: 16px;
-    margin-bottom: 30px;
-}
-
-.post-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.post-image img:hover {
-    transform: scale(1.03);
-}
-
-/* ================= POST CONTENT BOX ================= */
-.post-content-box {
-    background: #ffffff;
-    border-radius: 20px;
-    padding: 30px 25px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.06);
-}
-
-/* ================= META & AUTHOR ================= */
-.post-meta {
-    font-size: 14px;
-    color: #9ca3af;
+.page-title {
+    font-size: 42px;
+    text-align: center;
     margin-bottom: 10px;
 }
 
-.post-meta span {
-    font-weight: 500;
+.page-subtitle {
+    text-align: center;
+    color: #6b7280;
+    margin-bottom: 50px;
+}
+
+.posts-track {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 32px;
+}
+
+.post-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.post-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.post-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 14px;
+    margin-bottom: 14px;
+}
+
+.post-meta {
+    font-size: 13px;
+    color: #9ca3af;
+    margin-bottom: 8px;
+}
+
+.post-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.excerpt {
+    font-size: 15px;
+    color: #4b5563;
+    line-height: 1.6;
 }
 
 .post-author {
-    font-size: 15px;
-    color: #374151;
-    margin-bottom: 20px;
+    font-size: 14px;
+    margin-top: 10px;
+    color: #6b7280;
 }
 
-/* ================= POST CONTENT ================= */
-.post-content {
-    font-size: 17px;
-    line-height: 1.8;
-    color: #374151;
+/* CTA Box */
+/* ===== CTA BOX ===== */
+.cta-box {
+    background: #f5f3ff;       /* çok açık mor arka plan */
+    color: #4c1d95;  
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 20px;
+    margin: 60px auto;
+    max-width: 800px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.05); /* daha yumuşak gölge */
 }
 
-.post-content p {
+.cta-box h2 {
+    font-size: 34px;
     margin-bottom: 16px;
+    font-weight: 600;
 }
 
-.post-content a {
+.cta-box p {
+    font-size: 17px;
+    margin-bottom: 28px;
+    color: #f5f5f5; /* göz yormayan beyaz tonu */
+}
+
+.cta-btn {
+    background-color: #fff;
+    color: #a78bfa; /* pastel mor buton yazısı */
+    padding: 14px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.cta-btn:hover {
+    background-color: #f3ebff; /* pastel hover efekti */
+    transform: translateY(-2px);
+}
+
+
+
+
+.read-more {
+    display: inline-block;
+    margin-top: 12px;
+    font-weight: 600;
     color: #7c3aed;
     text-decoration: none;
-}
-
-.post-content a:hover {
-    text-decoration: underline;
-}
-
-/* ================= RESPONSIVE ================= */
-@media (max-width: 900px) {
-    .post-title {
-        font-size: 28px;
-    }
-    .post-content {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 500px) {
-    .post-title {
-        font-size: 24px;
-    }
-    .post-content {
-        font-size: 15px;
-    }
 }

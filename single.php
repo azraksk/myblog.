@@ -1,6 +1,8 @@
 <?php
 session_start();
-require_once "backend/db.php";
+require_once __DIR__ . "/backend/db.php";
+
+$BASE_URL = '/blog-project';
 
 // ID kontrolü
 if (!isset($_GET['id'])) {
@@ -35,12 +37,12 @@ if (!$post) {
     <meta charset="UTF-8">
     <title><?= htmlspecialchars($post['title']) ?></title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/posts.css?v=1.0">
+    <link rel="stylesheet" href="assets/css/single.css?">
 
 </head>
 <body>
 
-<?php include "includes/header.php"; ?>
+<?php include_once __DIR__ . "/includes/header.php"; ?>
 
 <div class="post-wrapper">
 
