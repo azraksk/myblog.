@@ -53,8 +53,6 @@ if (isset($_POST['contact_submit'])) {
 
 
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,6 +64,8 @@ if (isset($_POST['contact_submit'])) {
   <link rel="stylesheet" href="assets/css/header.css">
 </head>
 <body>
+
+<?php include_once __DIR__ . "/includes/header.php"; ?>
 
 <main class="about-page">
 

@@ -1,12 +1,12 @@
 /* ====== GLOBAL ====== */
 body {
-  background: linear-gradient(180deg, #f8f7ff, #ffffff);
+  background: #c81717;
   font-family: system-ui, sans-serif;
   color: #1f2937;
 }
 
 .dashboard-container {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 90px auto;
   padding: 0 20px;
 }

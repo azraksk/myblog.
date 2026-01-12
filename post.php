@@ -21,9 +21,23 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <head>
     <meta charset="UTF-8">
     <title>Posts | MyBlog</title>
+    <style>
+    .posts-bg {
+      position: fixed;
+      inset: 0;
+      background: linear-gradient(
+        120deg,
+        rgba(124, 58, 237, 0.08),
+        rgba(236, 72, 153, 0.06)
+      );
+      z-index: -1;
+    }
+  </style>
     <link rel="stylesheet" href="<?= $BASE_URL ?>/assets/css/style.css">
     <link rel="stylesheet" href="<?= $BASE_URL ?>/assets/css/posts.css">
 </head>
+
+
 <body>
 
 <?php include_once __DIR__ . "/includes/header.php"; ?>
